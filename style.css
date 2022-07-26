@@ -1,0 +1,182 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+
+body {
+    width: 80vw;
+    max-width: 144rem;
+    margin:auto;
+    padding-top: 4rem;
+    background-color:rgb(128, 151, 146);
+   
+}
+
+
+h1 {
+    font-size: 2.6rem;
+    color: rgb(27, 58, 51);
+    font-weight: 300;
+    font-family: sans-serif;
+}
+
+
+
+
+.seachDiv {
+    width: 100%;
+    margin: 4rem 0 6rem 0;
+    padding: .8rem 3.6rem;
+    border-style: solid;
+    border-radius: .9rem;
+    border-color:rgb(48, 82, 74) ;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.searchDivLeft {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+select {
+    width: 100%;
+    background-color:rgb(128, 151, 146) ;
+    height: 4rem;
+    color: rgb(197, 209, 207) ;
+}
+
+
+
+
+#filmselections {
+    width: 100%;
+    min-width: 10rem;
+    padding-left: 1rem;
+    border-style: none;
+    outline: none;
+    font-size: 1.8rem;
+}
+
+
+
+
+.bodySection{
+    display: flex;
+    transition: all .5s ease-in-out;
+}
+
+.leftsection {
+    width: 60%;
+}
+
+.leftImg {
+    width: 90%;
+    min-width: 40rem;
+    border-radius: 1.2rem;
+    margin-bottom: 5.6rem;
+}
+
+.filmInfo {
+    width: 90%;
+    min-width: 40rem;
+    padding: 3.4rem 6rem; 
+    backdrop-filter:blur(.8rem);
+    box-shadow: inset 0 0 0 30rem rgba(255, 255, 255, 0.344);
+    margin-bottom: 5rem;
+    font-size: 1.4rem;
+    border-radius: 1.2rem;
+    color:rgb(48, 82, 74) ;
+   
+}
+
+.info {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.info p {
+    margin-bottom: .8rem;
+    font-size: 1.6rem;
+}
+
+.filmTitleDiv{
+    text-align: left;
+    margin: 1.8rem 0 1.6rem 0;
+    font-size: 2.5rem;
+    font-weight: 200;
+    font-family: sans-serif;
+    line-height: 4rem;
+    color: rgb(35, 67, 60);
+}
+
+
+
+.filmInfo2 {
+    width: 40%;
+    min-width: 40rem;
+    backdrop-filter:blur(.8rem);
+    box-shadow: inset 0 0 0 30rem rgba(255, 255, 255, 0.344);
+    padding: 5rem 8rem;
+    border-radius: 1.2rem;
+    margin-bottom: 5rem;
+    color:rgb(46, 81, 67) ;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+    
+}
+
+.filmInfo2 p {
+    font-size: 2rem;
+    color:rgb(48, 82, 74);
+
+}
+
+.producer{
+    text-align: right;
+    width: 12.6rem;
+}
+
+
+footer {
+   display: flex;
+   flex-direction: column;
+   align-items: flex-end;
+   font-size: 1.4rem;
+   padding-bottom: 3rem;
+   color: rgb(176, 189, 186);
+  
+}
+
+
+@media screen and (max-width: 65rem) {
+   
+    .bodySection{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .filmInfo2 {
+        width: 100%;
+    }
+
+    .leftsection,
+    .leftImg,
+    .filmInfo{
+        width: 100%;
+    }
+
+
+    
+  }
