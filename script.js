@@ -15,16 +15,16 @@ option.addEventListener("change", (e)=>{
 
 
 const getFilms = async (film) => {
-    const fetching = await fetch('https://ghibliapi.herokuapp.com/films')
+    const fetching = await fetch('https://raw.githubusercontent.com/janaipakos/ghibliapi/master/data.json')
     const response = await fetching.json()
-
-    for( let item of response){
-      if(item.title === film){
-        filmTitle.textContent = item.title
-        filmDescrip.textContent = item.description
-        filmDirector.textContent = item.director
-        filmProducer.textContent = item.producer
-        filmImg.src = item.movie_banner
+    let data = response.films
+    for( let item in data){
+      if(data[item].title === film){
+        filmTitle.textContent = data[item].title
+        filmDescrip.textContent = data[item].description
+        filmDirector.textContent = data[item].director
+        filmProducer.textContent = data[item].producer
+        filmImg.src = data[item].movie_banner
       }
     }
 
