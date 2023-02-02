@@ -5,7 +5,7 @@ let filmDirector = document.querySelector(".director")
 let filmProducer = document.querySelector(".producer")
 let filmImg = document.querySelector(".leftImg")
 
-let selectedFilm = ''
+let selectedFilm;
 
 option.addEventListener("change", (e)=>{
     selectedFilm = e.target.value
